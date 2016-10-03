@@ -5,13 +5,13 @@ var author;
 
   function getNewQuote() {
     $.ajax({
-      url: 'https://crossorigin.me/http://api.forismatic.com/api/1.0/',
-      jsonp: 'jsonp',
-      dataType: 'jsonp',
+      url: "https://crossorigin.me/http://api.forismatic.com/api/1.0/",
+      jsonp: "jsonp",
+      dataType: "jsonp",
       data: {
-        method: 'getQuote',
-        lang: 'en',
-        format: 'jsonp'
+        method: "getQuote",
+        lang: "en",
+        format: "jsonp"
       },
       success: function(response) {
 quote = response.quoteText;
