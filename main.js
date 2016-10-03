@@ -5,7 +5,10 @@ var author;
 
   function getNewQuote() {
     $.ajax({
+
+      // crossorigin.me allows https to access http
       url: 'https://crossorigin.me/http://api.forismatic.com/api/1.0/',
+
       jsonp: 'jsonp',
       dataType: 'jsonp',
       data: {
